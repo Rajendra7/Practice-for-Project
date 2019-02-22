@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+		<title>Facebook</title>
+		<link rel="shortcut icon" type="image/png" href="./img/code.png">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4"><i class="fa fa-facebook-square"></i> Facebook Grabber</h1>
+            <p class="lead">A simple tool designed to grab all your facebook details !</p>
+        </div>
+    </div>
+
+    <div class="container hideArea">
+        <div class="row">
+            <div class="col-12">
+                <p class="para para-one">This is a simple tool to grab and display your facebook data!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="para">Facebook Data Grabber needs your Access Token with these permissions : <em><strong>email, user_hometown, user_about_me, user_birthday, user_education_history, user_location, user_posts, user_work_history</strong></em>. You can get your
+                    Facebook access token from : <a target="_blank" href="https://developers.facebook.com/tools/explorer/" style="color:#0089ff">Graph Api Explorer</a>.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="para">Enter your facebook token here in the box below!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Token</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!--	end of container-->
+
+    <!--	hidden part start -->
+
+    <div class="container firstHide imgContainer profile-details">
+        <div class="row image">
+            <div class="col-12 coverPic">
+                <img src="" alt="" id="cover" class="img-responsive img-fluid">
+
+                <div class="row">
+                    <div class="col-3 profilePic">
+                        <img src="" alt="" id="profile" class="img-responsive img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row details card">
+            <p id="name"></p>
+            <hr class="my-4">
+            <p id="hometown"></p>
+            <hr class="my-4">
+            <p id="email"></p>
+            <hr class="my-4">
+            <p id="birthday"></p>
+            <hr class="my-4">
+				</div>
+				<br>
+        <div><button type="button" class="btn btn-success btn-lg">Recent Feeds</button></div>
+		</div>
+		<br>
+	
+
+    <div class="container firstHide card recent-feed col-md-12 col-xs-12">
+        <div class="row details post-details">
+            <div class="col-12" id="posts">
+                <h3 style="margin-top: 20px;">Recent Posts :</h3>
+                <hr style="margin-bottom: 50px;">
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+
+
+    <!-- hidden part ends-->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>

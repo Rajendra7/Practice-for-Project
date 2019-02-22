@@ -1,0 +1,141 @@
+
+@media(min-width:1200px){
+    .container {
+        width: 1170px;
+        padding: 0px; 
+    }
+    
+}
+
+
+@media(max-width:1024px){
+    .toggleHome{
+        display: none;
+    }
+    
+}
+
+
+@media(max-width:992px){
+   .container,.new_job_section{
+    width:100%;
+    padding:0px;
+   }
+    .candidate{
+        width: 100%;
+        padding: 0px;
+    }
+    .posts_section{
+        width:100%;
+    }
+    
+    .toggleHome{
+        display: inline;
+    }
+    .nav_bar{
+        width:230px;
+        padding:10px;
+        position:fixed;
+        left: 0px;
+        top: 42px;
+        z-index:1000;
+        border-right:1px solid #ccc;
+        height:100%;
+        overflow: auto;
+        background:#eee;
+        transition: 0.5s;
+/*        display:none;*/
+    }
+    
+}
+
+
+
+
+@media(max-width:767px){
+ 
+    .container{
+    width: 100%;
+   }
+   .post_container{
+    width:100%;     
+    }
+    .tabs .nav-justified{
+        width: 150%;
+    }
+    .nav-justified>li {
+    display: table-cell;
+    width: 1%;
+        float: none;
+     }
+    .task_bar{
+        display: inline;
+    }
+    .tasks{
+        display: none;
+        width: 100%;
+        position: fixed;
+        top: 43px;
+    }        
+    header .search_input.pull-left{
+        display: none;
+    }
+    .applicant,.applicant.active{
+        background: white;
+        box-shadow: none;
+        cursor: pointer;
+    }
+        
+}
+
+@media(max-width:640px){
+   
+    .post_container{
+       padding:0px;
+    }
+    .nav_bar{
+        width: 100%;
+    }
+    .tabs .nav-justified {
+        width: 200%;
+    }
+    .main_nav{
+        margin: 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000;
+    /* border-top: 1px solid #ccc; */
+    box-shadow: 0px 0px 10px #ccc;
+    }
+    .recent-chat-list.dropdown-menu{
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    top:40px;
+    left: 0px;
+    float: none;
+    height:calc(100% - 80px);
+    }
+    body{
+        padding-top:50px;
+        padding-bottom:30px;
+    }
+    .chat_box{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    .tabs .nav-justified{
+    width: 235%;
+   }
+    .tabs .nav>li>a{
+        padding: 10px 5px;
+    }
+    
+    
+}
+
+@media(max-width:360px){
+    
+}
